@@ -76,6 +76,9 @@ jobs:
           CONFIG_TARGET_IMAGES_GZIP=y
           CONFIG_KERNEL_BUILD_USER="OpenWrt-CI"
           CONFIG_KERNEL_BUILD_DOMAIN="Azure"
+          CONFIG_TARGET_bcm53xx=y
+          CONFIG_TARGET_bcm53xx_DEVICE_phicomm-k3=y
+          CONFIG_TARGET_BOARD="bcm53xx"
           EOF
 
           #
