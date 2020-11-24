@@ -7,7 +7,7 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-CI
+name: OpenWrt
 
 on:
   push:
@@ -79,6 +79,8 @@ jobs:
           CONFIG_TARGET_bcm53xx=y
           CONFIG_TARGET_bcm53xx_DEVICE_phicomm-k3=y
           CONFIG_TARGET_BOARD="bcm53xx"
+          CONFIG_PACKAGE_luci-app-netdata=y
+          CONFIG_PACKAGE_netdata=y
           EOF
 
           #
